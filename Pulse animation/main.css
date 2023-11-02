@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f204b;
+    height: 100vh;
+    display: flex;
+}
+
+.loader {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-color: #99a8f9;
+    border-radius: 50%;
+    position: relative;
+}
+
+.loader::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    inset: 0;
+    border: solid 5px #99a8f9;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}

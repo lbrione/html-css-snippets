@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    transition: transform .2s, filter .2s;
+}
+
+.icon:hover {
+    transform: translate(-5px, -5px);
+    filter:  drop-shadow(5px 5px 5px #888);
+}
+
+.icon:active {
+    transform: translate(-2px,-2px);
+    filter:  drop-shadow(2px 2px 5px #888);
+}

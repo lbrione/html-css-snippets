@@ -1,0 +1,15 @@
+body {
+	background-color: #000;
+}
+
+.text {
+	width: max-content;
+	margin: 100px auto;
+	font-size: 40px;
+	font-family: sans-serif;
+
+	/* Propiedades para el texto con degradado */
+	background: linear-gradient(45deg, #7050D6, #3CC96A);	
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
