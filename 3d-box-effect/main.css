@@ -1,0 +1,53 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+/* Snippet */
+.box {
+    --color: #333;
+    --time: 100ms;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-color: #558ee3;
+    transition: box-shadow var(--time), transform var(--time);
+}
+
+.box span {
+    margin: auto;
+    color: #fff;
+    font-size: 100px;
+    font-weight: 700;
+    transition: text-shadow var(--time), transform var(--time);
+}
+
+.box:hover {
+    cursor: pointer;
+    transform: translate(-9px, -9px);
+    box-shadow: 
+        1px 1px var(--color),
+        2px 2px var(--color),
+        3px 3px var(--color),
+        4px 4px var(--color),
+        5px 5px var(--color),
+        6px 6px var(--color),
+        7px 7px var(--color),
+        8px 8px var(--color),
+        9px 9px var(--color);
+}
+
+.box:hover span {
+    transform: translate(-9px,-9px);
+    text-shadow: 
+        1px 1px var(--color),
+        2px 2px var(--color),
+        3px 3px var(--color),
+        4px 4px var(--color),
+        5px 5px var(--color),
+        6px 6px var(--color),
+        7px 7px var(--color),
+        8px 8px var(--color),
+        9px 9px var(--color);
+}
